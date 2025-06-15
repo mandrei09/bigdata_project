@@ -17,7 +17,7 @@ ENV PATH="$JAVA_HOME/bin:$PATH"
 # Install Python packages (PySpark includes Spark already)
 RUN pip install --upgrade pip && \
     pip install pyspark jupyterlab ipykernel notebook && \
-    pip install pandas matplotlib seaborn scikit-learn
+    pip install pandas matplotlib seaborn scikit-learn numpy
 
 # Create workspace
 WORKDIR /workspace
